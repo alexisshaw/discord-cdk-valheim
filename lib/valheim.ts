@@ -21,10 +21,21 @@ const muncheimValheimServerStack = new ValheimWorldStack(app, "MuncheimWorld", {
   },
 });
 
+const muncheimValheimServerStack2 = new ValheimWorldStack(app, "MuncheimWorld2", {
+  env,
+  passwordSecretId: "muncheimServerPass",
+  adminlistSecretId: "adminlistValheim",
+  environment: {
+    SERVER_NAME: "Muncheim3 Dedicated Server",
+    WORLD_NAME: "Muncheim3",
+  },
+});
+
 new DiscordInteractionsStack(app, "DiscordInteractionsStack", {
   env,
   clientIdSecretId: "discordValheimBotClientPublicKey",
   servers: {
     muncheim: muncheimValheimServerStack.world,
+    muncheim2: muncheimValheimServerStack2.world,
   },
 });

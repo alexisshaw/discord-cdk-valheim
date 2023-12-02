@@ -226,7 +226,7 @@ const status = async (configs: ServerConfig[], name: string) => {
       `steam://run/892970//-console%20%2Bconnect%20${publicIp}%3A${port}%20%2Bpassword%20${pass}\n`;
   }
 
-  const status = await fetch(`http://${publicIp}/status.json`)
+  const status: any | undefined = await fetch(`http://${publicIp}/status.json`)
     .then((res) => res.json())
     .catch((e) => {
       console.error(e);

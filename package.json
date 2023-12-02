@@ -1,6 +1,6 @@
 {
   "name": "valheim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "bin": {
     "minecraft": "lib/valheim.js"
   },
@@ -17,8 +17,10 @@
   },
   "devDependencies": {
     "@aws-cdk/assert": "^1.94.1",
+    "@types/aws-lambda": "^8.10.111",
     "@types/jest": "^26.0.22",
     "@types/node": "10.17.27",
+    "@types/node-fetch": "^2.6.2",
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@typescript-eslint/parser": "^5.34.0",
     "aws-cdk": "^1.94.1",
@@ -32,21 +34,25 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.94.1",
+    "@aws-cdk/aws-apigateway": "^1.196.0",
     "@aws-cdk/aws-cloudwatch": "^1.94.1",
-    "@aws-cdk/aws-cloudwatch-actions": "^1.94.1",
-    "@aws-cdk/aws-ec2": "^1.94.1",
-    "@aws-cdk/aws-ecs": "^1.94.1",
-    "@aws-cdk/aws-events": "^1.94.1",
-    "@aws-cdk/aws-events-targets": "^1.94.1",
-    "@aws-cdk/aws-iam": "^1.94.1",
-    "@aws-cdk/aws-lambda": "^1.94.1",
-    "@aws-cdk/aws-lambda-event-sources": "^1.96.0",
-    "@aws-cdk/aws-s3": "^1.94.1",
-    "@aws-cdk/aws-s3-assets": "^1.94.1",
-    "@aws-cdk/aws-secretsmanager": "^1.94.1",
-    "@aws-cdk/aws-sns": "^1.94.1",
-    "@aws-cdk/core": "^1.94.1",
-    "cdk-valheim": "0.0.17"
+    "@aws-cdk/aws-cloudwatch-actions": "^1.196.0",
+    "@aws-cdk/aws-ec2": "^1.196.0",
+    "@aws-cdk/aws-ecs": "^1.196.0",
+    "@aws-cdk/aws-events": "^1.196.0",
+    "@aws-cdk/aws-events-targets": "^1.196.0",
+    "@aws-cdk/aws-iam": "^1.196.0",
+    "@aws-cdk/aws-lambda": "^1.196.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.196.0",
+    "@aws-cdk/aws-s3": "^1.196.0",
+    "@aws-cdk/aws-s3-assets": "^1.196.0",
+    "@aws-cdk/aws-secretsmanager": "^1.196.0",
+    "@aws-cdk/aws-sns": "^1.196.0",
+    "@aws-cdk/core": "^1.196.0",
+    "@aws-sdk/client-cloudwatch": "^3.289.0",
+    "aws-lambda": "^1.0.7",
+    "cdk-valheim": "^0.0.17",
+    "discord-interactions": "^3.3.0",
+    "node-fetch": "^3.3.0"
   }
 }

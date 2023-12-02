@@ -104,7 +104,7 @@ const getMetrics: (clusterArn: string, serviceName: string) => Promise<{ online:
     return emptyMetrics;
   }
 
-  const status = await fetch(`http://${publicIp}/status.json`)
+  const status: any | undefined = await fetch(`http://${publicIp}/status.json`)
     .then((res) => res.json())
     .catch((e) => {
       console.error(e);
